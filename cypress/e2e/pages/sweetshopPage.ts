@@ -25,10 +25,10 @@ class SweetshopPage {
     }
     
     public validateProductTitlePriceAndQuantity(number:number, productTitle: string,productPrice: string, quantity: string) {
-        cy.get('[class="my-0"]').eq(number++).then($el => {
+        cy.contains('h6', productTitle).then($el => {
             cy.softAssert($el.text(), productTitle, `Product title should be "${productTitle}"`);
         });
-        cy.get('[class="my-0"]').eq(number++).then($el => {
+        cy.contains('h6', productTitle).then($el => {
             cy.softAssert($el.is(':visible'), true, 'Product visibility should be true');
         });
         cy.contains('span', productPrice).then($el => {

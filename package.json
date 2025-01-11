@@ -21,13 +21,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dreamquality/cypress-starter.git"
+    "url": "git+https://github.com/dreamquality/cypress-allure-starter.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dreamquality/cypress-starter/issues"
+    "url": "https://github.com/dreamquality/cypress-allure-starter/issues"
   },
-  "homepage": "https://github.com/dreamquality/cypress-starter#readme",
+  "homepage": "https://github.com/dreamquality/cypress-allure-starter#readme",
   "devDependencies": {
     "@types/node": "^18.0.5",
     "allure-cypress": "^3.0.8",

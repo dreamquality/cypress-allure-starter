@@ -5,12 +5,7 @@
     "price": "£0.75"
   },
   {
-    "name": "Sherbert Discs",
-    "quantity": "1",
-    "price": "£0.95"
-  },
-  {
-    "name": "Bon Bons",
+    "name": "Strawberry Bon Bons",
     "quantity": "1",
     "price": "£1.00"
   },
@@ -18,5 +13,10 @@
     "name": "Chocolate Cups",
     "quantity": "1",
     "price": "£1.00"
+  },
+  {
+    "name": "Sherbet Discs",
+    "quantity": "1",
+    "price": "£0.95"
   }
 ]
