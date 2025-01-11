@@ -1,0 +1,40 @@
+{
+  "name": "cypress-e2e-typescript",
+  "version": "1.0.0",
+  "description": "\"Automation Testing framework using cypress, typescript and allure-reporter\"",
+  "main": "index.js",
+  "scripts": {
+    "cy:e2e:run": "npm run clear && npm run cy:run && npm run report",
+    "cy:open": "cypress open --config-file config/cypress.config.ts --env allure=true",
+    "cy:run": "cypress run --config-file config/cypress.config.ts --env allure=true",
+    "report": "npx allure generate reports/ui/allure-results --clean -o reports/ui/allure-report && allure open reports/ui/allure-report",
+    "allure:generate": "npx allure generate allure-results --clean",
+    "clear": "rm -r reports/** || true"
+  },
+  "keywords": [
+    "cypress",
+    "typescript",
+    "e2e",
+    "testing",
+    "automation",
+    "soft-assertions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamquality/cypress-starter.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreamquality/cypress-starter/issues"
+  },
+  "homepage": "https://github.com/dreamquality/cypress-starter#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.5",
+    "allure-cypress": "^3.0.8",
+    "cypress": "^13.7.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.32.0"
+  }
+}

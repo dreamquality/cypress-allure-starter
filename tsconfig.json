@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "es2016",
+    "module": "Node16",
+    "lib": ["dom", "es6", "es7"],
+    "types": ["node","cypress", "allure-cypress"],
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "noEmit": true,
+    "moduleResolution":"node16",
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "**/*.ts",
+    "../node_modules/cypress",
+    "cypress/support/**/*.d.ts"
+, "cypress/support/commands.js" ]
+}
