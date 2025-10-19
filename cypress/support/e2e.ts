@@ -16,3 +16,10 @@
 // Import commands.js using ES2015 syntax:
 import './commands';
 import "allure-cypress";
+
+// Import schema validation commands
+import { addSchemaValidationCommand, addSchemaAssertion } from './schemas/schemaValidator';
+
+// Add schema validation commands
+addSchemaValidationCommand();
+addSchemaAssertion();

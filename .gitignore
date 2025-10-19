@@ -1,3 +1,13 @@
 node_modules/
 allure-report/
 allure-results/
+reports/
+.env
+*.log
+.DS_Store
+cypress/screenshots/
+cypress/videos/
+dist/
+build/
+.vscode/
+.idea/
