@@ -7,7 +7,17 @@
     "cy:e2e:run": "npm run clear && npm run cy:run && npm run report",
     "cy:open": "cypress open --config-file config/cypress.config.ts --env allure=true",
     "cy:run": "cypress run --config-file config/cypress.config.ts --env allure=true",
+    "cy:ui": "cypress run --config-file config/cypress.config.ts --spec 'cypress/e2e/tests/**/*.cy.ts' --env allure=true",
+    "cy:api": "cypress run --config-file config/cypress.config.ts --spec 'cypress/e2e/api/**/*.cy.ts' --env allure=true",
+    "cy:ui:open": "cypress open --config-file config/cypress.config.ts --env allure=true,testType=ui",
+    "cy:api:open": "cypress open --config-file config/cypress.config.ts --env allure=true,testType=api",
+    "cy:all": "npm run clear && npm run cy:ui && npm run cy:api && npm run report:all",
+    "cy:dev": "cypress run --config-file config/cypress.dev.config.ts --env allure=true",
+    "cy:staging": "cypress run --config-file config/cypress.staging.config.ts --env allure=true",
+    "cy:prod": "cypress run --config-file config/cypress.prod.config.ts --env allure=true",
     "report": "npx allure generate reports/ui/allure-results --clean -o reports/ui/allure-report && allure open reports/ui/allure-report",
+    "report:all": "npx allure generate reports/allure-results --clean -o reports/allure-report && allure open reports/allure-report",
+    "report:api": "npx allure generate reports/api/allure-results --clean -o reports/api/allure-report && allure open reports/api/allure-report",
     "allure:generate": "npx allure generate allure-results --clean",
     "clear": "rm -r reports/** || true"
   },
@@ -29,9 +39,13 @@
   },
   "homepage": "https://github.com/dreamquality/cypress-allure-starter#readme",
   "devDependencies": {
+    "@faker-js/faker": "^9.3.0",
     "@types/node": "^18.0.5",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
     "allure-cypress": "^3.0.8",
     "cypress": "^13.7.0",
+    "dotenv": "^16.4.7",
     "typescript": "^5.7.3"
   },
   "dependencies": {
