@@ -9,7 +9,7 @@ class SweetshopPage {
 
 
     public launchApplication() {
-        cy.visit('/', { timeout: 60000 })
+        cy.visit('/')
     }
 
     public addToBasket(index: number = 0) { 
