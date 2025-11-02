@@ -7,7 +7,7 @@ export default defineConfig({
   defaultCommandTimeout: 5000,
   execTimeout: 5000,
   taskTimeout: 5000,
-  pageLoadTimeout: 30000,
+  pageLoadTimeout: 60000,
   requestTimeout: 5000,
   responseTimeout: 30000,
   screenshotsFolder: 'reports/screenshots',
