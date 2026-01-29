@@ -7,8 +7,8 @@
     "cy:e2e:run": "npm run clear && npm run cy:run && npm run report",
     "cy:open": "cypress open --config-file config/cypress.config.ts --env allure=true",
     "cy:run": "cypress run --config-file config/cypress.config.ts --env allure=true",
-    "report": "npx allure generate reports/ui/allure-results --clean -o reports/ui/allure-report && allure open reports/ui/allure-report",
-    "allure:generate": "npx allure generate allure-results --clean",
+    "report": "npx allure generate reports/ui/allure-results -o reports/ui/allure-report && npx allure open reports/ui/allure-report",
+    "allure:generate": "npx allure generate allure-results",
     "clear": "rm -r reports/** || true"
   },
   "keywords": [
@@ -35,6 +35,6 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "allure-commandline": "^2.36.0"
+    "allure": "^3.0.0"
   }
 }
