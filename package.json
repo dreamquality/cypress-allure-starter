@@ -31,7 +31,7 @@
   "devDependencies": {
     "@types/node": "^25.9.2",
     "allure-cypress": "^3.9.0",
-    "cypress": "^15.16.0",
+    "cypress": "^15.17.0",
     "typescript": "^5.9.3"
   },
   "dependencies": {
