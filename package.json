@@ -30,7 +30,7 @@
   "homepage": "https://github.com/dreamquality/cypress-allure-starter#readme",
   "devDependencies": {
     "@types/node": "^25.9.3",
-    "allure-cypress": "^3.10.0",
+    "allure-cypress": "^3.10.2",
     "cypress": "^15.18.0",
     "typescript": "^5.9.3"
   },
