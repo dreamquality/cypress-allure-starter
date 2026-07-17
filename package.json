@@ -29,12 +29,16 @@
   },
   "homepage": "https://github.com/dreamquality/cypress-allure-starter#readme",
   "devDependencies": {
-    "@types/node": "^25.0.10",
-    "allure-cypress": "^3.4.5",
-    "cypress": "^15.9.0",
+    "@types/node": "^25.9.3",
+    "allure-cypress": "^3.10.2",
+    "cypress": "^15.18.1",
     "typescript": "^5.9.3"
   },
   "dependencies": {
+<<<<<<< HEAD
     "allure": "^3.0.0"
+=======
+    "allure-commandline": "^2.43.0"
+>>>>>>> origin/main
   }
 }
