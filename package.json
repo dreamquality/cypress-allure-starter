@@ -35,10 +35,6 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-<<<<<<< HEAD
     "allure": "^3.0.0"
-=======
-    "allure-commandline": "^2.43.0"
->>>>>>> origin/main
   }
 }
