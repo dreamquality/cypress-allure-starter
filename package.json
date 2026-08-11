@@ -35,7 +35,7 @@
     "@types/node": "^25.9.3",
     "allure-cypress": "^3.10.2",
     "cypress": "^15.20.0",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "dependencies": {
     "allure": "^3.0.0"
